@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(3, 37, 65);
+  transition: top 0.4s;
+  z-index: 9999;
+
+  &--hidden {
+    top: -100%;
+    transition: top 0.4s;
+  }
+
+  &__logo {
+    display: block;
+    width: 145px;
+    height: 20px;
+  }
+
+  &__links {
+    a {
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      margin-right: 16px;
+
+      :last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

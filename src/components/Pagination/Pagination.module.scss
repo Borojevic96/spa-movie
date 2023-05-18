@@ -1,0 +1,31 @@
+.pagination {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &__button {
+    width: 120px;
+    height: 40px;
+    background-color: rgba(3, 37, 65, 0.8);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: #8d8b8b;
+    }
+
+    &:hover:enabled {
+      color: rgba(3, 37, 65, 0.8);
+      border: 1px solid rgba(3, 37, 65, 0.8);
+      background-color: white;
+      transition: all 0.3s;
+    }
+  }
+}
